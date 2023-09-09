@@ -32,12 +32,15 @@ const OptionsWrapper=styled(Box)({
   }
 })
 
+const MenuButton=styled(MenuIcon)({
+  cursor:'pointer'
+})
 function Header({toggxleDrawer}) {
   return (
     
        <StyledAppbar position='static'>
          <Toolbar>
-           <MenuIcon color='action' onClick={toggxleDrawer}/>
+           <MenuButton color='action' onClick={toggxleDrawer}/>
            <img src={gmailLogo} alt="logo" style={{width:110,marginLeft:15}} />
            <SearchWrapper>
              <Search color='action'/>
